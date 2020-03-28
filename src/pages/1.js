@@ -42,7 +42,7 @@ export default class extends React.Component {
   };
 
   getSnapshotBeforeUpdate(props, state) {
-    return 'I am the snapshot!';
+    return state.name || null;
   }
 
   componentDidUpdate(props, state, snapshot) {
